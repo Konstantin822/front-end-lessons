@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beetroot free introductory course</title>
+    <link rel="stylesheet" href="style_cake.css">
+</head>
+<body>
+  <script src=""></script>
+    <div class="container">
+        <header>
+          <h1>Київський торт</h1>
+        </header>
+        
+        <main>
+          <div class="info">
+          <div class="img-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kiev_cake_slice.JPG/800px-Kiev_cake_slice.JPG" alt="Київський торт">
+          </div>
+          <div class="content">
+            <p>Ки́ївський торт — кондитерський виріб, продукція Київської кондитерської фабрики. За свою сімдесятирічну історію став одним із символів Києва та сувенірним подарунком.</p>
+            <p>Торт складається з двох білково-збивних коржів з прошарками масляно-вершкового крему. Поверхню торта прикрашено різними кремами, бокову поверхню обсипано горіховою крихтою.</p>
+            <p>Дизайн пакування — на круглій коробці зображені зелена гілка каштана і два веселі каштанчики.</p>
+          </div>
+          </div>
+          <section>
+            <h2>Цікаві факти</h2>
+            <ul>
+              <li>Одного разу кондитери забули покласти в холодильну камеру партію яєчного білка, призначеного для бісквіта. Наступного ранку начальник бісквітного цеху Костянтин Микитович Петренко за допомогою 17-річної помічниці кондитера Надії Чорногор, щоб приховати помилку колег, на свій страх і ризик переклав застиглі білкові коржі масляним кремом, посипав ванільною пудрою, прикрасив поверхню квітковим орнаментом. Так з'явився попередник торта, якому було призначено на довгі десятиліття стати візитівкою Києва.
+              </li>
+              <li>8 грудня 2020 року бронзова мініскульптура «Київський торт» з'явилася в Києві на фасаді фабрики Roshen (проспект Науки, 1) в рамках проєкту "Шукай!". Скульптор Дар'я Вовк. Прикмета скульптурки -- «Потреш мене -- і завжди будеш струнким»
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Характеристики</h2>
+            <table class="table">
+              <tr>
+                <th>Тип</th>
+                <td>Десерт</td>
+              </tr>
+              <tr>
+                <th>Походження</th>
+                <td>Українська кухня</td>
+              </tr>
+              <tr>
+                <th>Автор</th>
+                <td>К. Н. Петренко, Н. Черногор</td>
+              </tr>
+              <tr>
+                <th>Час появи</th>
+                <td>1956</td>
+              </tr>
+              <tr>
+                <th>Енергетична цінність на 100 г</th>
+                <td>481 ккал</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <h2>Розрахунки</h2>
+            <p>Порахуймо, скільки треба виконати різних вправ, щоб спалити калорії від тортика.</p>
+            <form onsubmit="calc();return false;">
+              <input type="number" id="quantity" placeholder="Кількість порцій" min="1">
+              <select id="exercise">
+                <option value="">Оберіть вправу</option>
+                <option value="walk">Прогулянка пішки</option>
+                <option value="run">Пробіжка</option>
+                <option value="fitness">Фітнес</option>
+              </select>
+              <button type="submit">Порахувати</button>
+            </form>
+            <ul>
+              <li>
+                <b>Загальна енергетична цінність:</b>
+                <span id="total_kkal"></span>
+              </li>
+              <li>
+                <b>Результат*:</b>
+                <span id="result"></span>
+              </li>
+            </ul>
+        </main>
+        
+        <footer>
+          <p>Матеріал запозичений з сайту <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%82%D0%BE%D1%80%D1%82" target=_blank>wikipedia.org</a></p>
+        </footer>
+        </div>
+</body>
+</html>

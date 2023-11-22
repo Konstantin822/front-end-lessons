@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5rem;
+  color: #444;
+  margin: 0;
+}
+
+header {
+  border-bottom: 5px solid violet
+}
+
+h1 {
+  text-align: center;
+  color: darkviolet;
+}
+
+input[type=number],
+select {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #a0a0a0;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid darkviolet;
+  background-color: darkviolet;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #fff;
+  color: darkviolet;
+}
+
+footer {
+  background-color: pink;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: tomato;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+h2 {
+  color: chocolate;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+}
+
+.table tr:nth-child(even) {
+  background-color: bisque;
+}
