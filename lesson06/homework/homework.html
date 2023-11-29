@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="form">
+            <!-- Блок ім'я, email, пароль -->
+            <div class="form__input">
+                <div class="form__input-name">
+                    Повне ім'я
+                    <input type="text">
+                </div>
+                <br>
+                <div class="form__input-email">
+                    Email
+                    <input type="email">
+                </div>
+                <br>
+                <div class="form__input-password">
+                    Пароль
+                    <input type="password">
+                </div>
+                <br>
+                <div class="form__input-password-again">
+                    Пароль ще раз
+                    <input type="password">
+                </div>
+            </div>
+            <!-- End -->
+
+            <br>
+            <!-- Блок стать -->
+            <div class="form__field">
+                <div class="form__field__radio">
+                    Стать
+                    <label>
+                        <input type="radio" name="radiobutton"> Чоловіча
+                        <input type="radio" name="radiobutton"> Жіноча
+                    </label>
+                </div>
+            </div>
+            <!-- End -->
+            <br>
+            <!-- Блок вік -->
+            <div class="form__input">
+                <div class="form__input-age">
+                    Вік
+                    <input type="age">
+                </div>
+            </div>
+            <!-- End -->
+            <br>
+            <!-- Блок вибору курсу -->
+            <div class="form__select">
+                Курс
+                <select name="select" id="">
+                    <option value="choose">-=Виберіть курс=-</option>
+                    <option value="front-end">Front-end</option>
+                    <option value="python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="C#">C#</option>
+                </select>
+            </div>
+            <!-- End -->
+            <br>
+            <!-- Блок адреса -->
+            <div class="form__text-area">
+                Повна адреса
+                <textarea name="address" id="" cols="20" rows="5"
+                    placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+            </div>
+            <!-- End -->
+            <br>
+            <!-- Блок згода на обробку -->
+            <div class="form__field">
+                <div class="form__field__checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Я погоджуюся з обробкою персональних даних
+                    </label>
+                </div>
+            </div>
+            <!-- End -->
+            <br>
+            <!-- Блок кнопки -->
+            <div class="form__button">
+                <button>Очистити форму</button>
+                <button>Зареєструватися</button>
+            </div>
+            <!-- End -->
+        </form>
+    </div>
+</body>
+
+</html>
