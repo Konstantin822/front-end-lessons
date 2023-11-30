@@ -1,0 +1,99 @@
+/* Global style */
+
+/* Каждый сайт начинаем с этого. Заучить*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Ставим дефолтный цвет на все*/
+body {
+    color: #070707;
+    font-size: 18px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+img {
+    display: block;
+}
+
+.title {
+    /*Если не подключился шрифт в скобках подключиться дефолтный шрифт*/
+    font-size: 48px;
+    /*font-style: normal;*/
+    font-weight: 700;
+    line-height: normal;
+    /*отступ между строками*/
+}
+
+.h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.link {
+    color: #828282;
+}
+
+.link--active {
+    color: #070707;
+}
+
+.container {
+    width: 100%;
+    /*Не обязательно*/
+
+    max-width: 970px;
+    /*Обязательно*/
+
+    margin: 20px auto;
+}
+
+/* Global style End */
+
+/* Global Header */
+.header__nav {
+    text-align: center;
+}
+
+/*Global Header End */
+
+
+/* Section Hero */
+.hero__img {
+    width: 100%;
+}
+
+/* Section Hero End */
+
+/* Section About */
+.about {
+    background: #F6F6F6;
+}
+
+.about__container {
+    max-width: 480px;
+}
+
+/* Section About End */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Пишем когда нужно максимально сжатое в одном файле-->
+    <style>
+        /*Обращение по тегу*/
+        div {
+            background-color: transparent;
+        }
+
+        /*Обращение по selector(классу)*/
+        .wrapper {
+            background-color: aqua;
+        }
+
+        .section .title {
+            color: black !important;
+            /*!important перебивает все*/
+        }
+
+        /*Обращение по id. Перебивает инлайн*/
+        #root {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Инлайновое записание стиля срабатывает в приоритете-->
+    <div class="wrapper" id="root" style="background-color: blueviolet;">
+        <section class="section">
+            <div class="container">
+                <h1 class="title section__title" id="t1">
+                    Lorem ipsum dolor sit.
+                </h1>
+                <p class="title section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, porro?</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
