@@ -69,8 +69,7 @@ img {
 
 .header-nav {
     display: flex;
-    width: 496px;
-    justify-content: space-around;
+    justify-content: center;
     gap: 40px;
     padding-top: 25px;
     padding-bottom: 25px;
