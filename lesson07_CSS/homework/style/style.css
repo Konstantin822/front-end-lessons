@@ -25,6 +25,10 @@ img {
     display: block;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
 .title {
     font-size: 72px;
     font-weight: 700;
@@ -65,8 +69,11 @@ img {
 
 .header-nav {
     display: flex;
+    width: 496px;
     justify-content: space-around;
     gap: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* Global Header END */
