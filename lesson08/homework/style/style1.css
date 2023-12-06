@@ -1,0 +1,287 @@
+/* Global style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #070707;
+    font-size: 18px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+img {
+    display: block;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.h2 {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    font-weight: 500;
+}
+
+.link {
+    color: #828282;
+}
+
+.header-nav>a:hover {
+    font-weight: bolder;
+}
+
+.link-active {
+    color: #070707;
+}
+
+.container {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+/* Global style END */
+
+/* Global Header */
+.header {
+    text-align: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Global Header END */
+
+/* Section Hero */
+.hero__first-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 12px;
+}
+
+.hero__name {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+/* Section Hero END */
+
+/* Section About */
+.about {
+    background: #F6F6F6;
+    text-align: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.about__title {
+    padding-top: 100px;
+}
+
+.about__description {
+    display: flex;
+    max-width: 480px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+/* Section About END */
+
+/* Section Skills */
+.skills {
+    text-align: center;
+}
+
+.skills__place {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.skills-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills__title {
+    padding-top: 100px;
+}
+
+.skills__row {
+    display: flex;
+    justify-content: space-around;
+    gap: 97px;
+    padding-bottom: 100px;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.item__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.skills__stars {
+    color: #E5E5E5;
+}
+
+.is-active {
+    color: #070707;
+}
+
+/* Section Skills END */
+
+/* Section Portfolio start */
+.portfolio {
+    background: #F6F6F6;
+    text-align: center;
+}
+
+.portfolio__place {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.portfolio__title {
+    padding-top: 100px;
+}
+
+.portfolio__pages {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding-bottom: 100px;
+}
+
+.portfolio__item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.portfolio__description {
+    width: 200px;
+    text-align: center;
+}
+
+/* Section Portfolio END */
+
+/* Footer start */
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.contacts__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.footer__text {
+    max-width: 280px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__button {
+    background-color: #070707;
+    color: #FFF;
+    width: 180px;
+    height: 44px;
+    justify-content: center;
+    border-radius: 22px;
+}
+
+.footer__button:hover {
+    background-color: #616060;
+    transform: translateX(100%);
+    transition: 1s;
+    /* Хотел сделать изменение цвета постепенно слева направо */
+}
+
+.button__text {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.footer__icons>a:hover {
+    opacity: 0.5;
+}
+
+.footer__description {
+    max-width: 200px;
+    max-height: 60px;
+    color: #828282;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Footer END */
