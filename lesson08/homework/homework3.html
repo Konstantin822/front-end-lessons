@@ -5,10 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=S, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .tab__content {
+            display: none;
+        }
+
+        #inp1:checked+.tab__content {
+            display: block;
+        }
+
+        /*.section1:nth-child(2n) {
+            background-color: blueviolet;
+        }*/
+        .section1:nth-child(even) {
+            background-color: blueviolet;
+        }
+
+        /*.section1:nth-child(3n) {
+            background-color: blueviolet;
+        }*/
+
+        .section1:nth-child(odd) {
+            background-color: green;
+        }
+
+        .section1:first-child {
+            color: red;
+        }
+
+        .section1:last-child {
+            color: aqua;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="sec-row">
+            <section class="section1">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt in necessitatibus quos. Ipsum
+                    odio,
+                    temporibus architecto nemo reiciendis debitis natus error fugit illo, eaque, culpa veniam neque
+                    magnam
+                    cupiditate nobis perferendis ab provident. Ipsam aperiam non inventore facere, a doloremque! Modi
+                    nisi
+                    earum magnam omnis quasi maiores iste repellendus ullam eius sunt, quis illo dignissimos
+                    perferendis.
+                    Impedit repellat blanditiis fugit nam doloremque sed, consequuntur officiis velit optio accusamus
+                    unde
+                    ex repellendus numquam aspernatur laborum distinctio, delectus animi ipsam provident dolorem
+                    voluptates
+                    voluptatem. Repellendus, fuga. Ducimus qui sunt et ab quas suscipit dolorum pariatur nisi, esse
+                    fugiat
+                    aliquam saepe vel ea?
+                </p>
+                <div class="tab">
+                    <label class="tab__show" for="inp1">Show</label>
+                    <input id="inp1" type="checkbox">
+                    <p class="tab__content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia praesentium recusandae eos
+                        enim exercitationem, reprehenderit neque maiores quae ab facilis quasi. Consequuntur, natus
+                        laudantium exercitationem quis soluta eos ullam quas repellat ipsum accusantium veniam
+                        cupiditate, dolorum autem id ducimus, nostrum magni libero eveniet consequatur? Consequuntur
+                        amet facere natus velit blanditiis quam similique dolorum unde. Inventore quam fugit ipsam
+                        obcaecati officiis cum. Tenetur accusamus incidunt aliquam minus quos eos sequi, minima iusto
+                        ipsam, magni sed temporibus a. Odio harum molestiae nam. Sit impedit dolore eius alias porro,
+                        facere quas minima voluptas. Aliquid ea quas in est sequi eius omnis impedit corporis?
+                    </p>
+                </div>
+            </section>
 
+            <section class="section1">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis qui labore magni cupiditate! Saepe
+                    quas earum quos!
+                </p>
+                <div class="tab">
+                    <label for="inp1">Show</label>
+                    <input id="inp1" type="checkbox">
+                    <p class="tab__content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia praesentium recusandae eos
+                        enim exercitationem, reprehenderit neque maiores quae ab facilis quasi. Consequuntur, natus
+                        laudantium exercitationem quis soluta eos ullam quas repellat ipsum accusantium veniam
+                        cupiditate, dolorum autem id ducimus, nostrum magni libero eveniet consequatur? Consequuntur
+                        amet facere natus velit blanditiis quam similique dolorum unde. Inventore quam fugit ipsam
+                        obcaecati officiis cum. Tenetur accusamus incidunt aliquam minus quos eos sequi, minima iusto
+                        ipsam, magni sed temporibus a. Odio harum molestiae nam. Sit impedit dolore eius alias porro,
+                        facere quas minima voluptas. Aliquid ea quas in est sequi eius omnis impedit corporis?
+                    </p>
+                </div>
+            </section>
+            <section class="section1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit magni explicabo consequuntur,
+                    ut ratione soluta illum, nisi nihil repellendus dolor, consectetur hic nemo. Quos nemo doloribus
+                    odio perferendis?
+                </p>
+                <div class="tab">
+                    <label for="inp1">Show</label>
+                    <input id="inp1" type="checkbox">
+                    <p class="tab__content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam recusandae eum dignissimos,
+                        doloremque assumenda voluptates at accusantium iste impedit doloribus molestias magnam enim quo
+                        in!
+                    </p>
+                </div>
+            </section>
+            <section class="section1">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores animi veritatis nulla voluptas
+                    quam a nam dicta, voluptatum exercitationem non voluptatem quaerat autem unde pariatur sequi vero
+                    repellendus illum alias.
+                </p>
+                <div class="tab">
+                    <label for="inp1">Show</label>
+                    <input id="inp1" type="checkbox">
+                    <p class="tab__content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia praesentium recusandae eos
+                        enim exercitationem, reprehenderit neque maiores quae ab facilis quasi. Consequuntur, natus
+                        laudantium exercitationem quis soluta eos ullam quas repellat ipsum accusantium veniam
+                        cupiditate, dolorum autem id ducimus, nostrum magni libero eveniet consequatur? Consequuntur
+                        amet facere natus velit blanditiis quam similique dolorum unde. Inventore quam fugit ipsam
+                        obcaecati officiis cum. Tenetur accusamus incidunt aliquam minus quos eos sequi, minima iusto
+                        ipsam, magni sed temporibus a. Odio harum molestiae nam. Sit impedit dolore eius alias porro,
+                        facere quas minima voluptas. Aliquid ea quas in est sequi eius omnis impedit corporis?
+                    </p>
+                </div>
+            </section>
+            <section class="section1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore distinctio sint aliquid,
+                    aut placeat? Saepe.
+                </p>
+                <div class="tab">
+                    <label for="inp1">Show</label>
+                    <input id="inp1" type="checkbox">
+                    <p class="tab__content">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nulla.
+                    </p>
+                </div>
+            </section>
+            <section class="section1">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque tenetur vel fugit, illum eius
+                    molestias.
+                </p>
+                <div class="tab">
+                    <label for="inp1">Show</label>
+                    <input id="inp1" type="checkbox">
+                    <p class="tab__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam harum modi doloremque!
+                        Perspiciatis assumenda ipsam eum, deserunt dolor voluptatem!
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
