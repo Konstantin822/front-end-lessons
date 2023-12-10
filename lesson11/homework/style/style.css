@@ -156,11 +156,15 @@ body {
 .left-side__title {
     color: var(--dark-color);
     font: var(--title-font);
+    display: flex;
+    text-align: left;
 }
 
 .left-side__text {
     color: var(--dark-color);
     font: var(--sub-title-font);
+    display: flex;
+    text-align: left;
 }
 
 .left-side__button {
@@ -207,6 +211,7 @@ body {
 .features__card {
     display: flex;
     justify-content: space-around;
+    gap: 40px;
 }
 
 .card {
@@ -232,6 +237,8 @@ body {
 
 .text__subtext {
     font: var(--sub-title3-font);
+    display: flex;
+    text-align: left;
 }
 
 .features__button {
