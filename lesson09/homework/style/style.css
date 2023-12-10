@@ -1,4 +1,5 @@
 /* Global style */
+/* Global style */
 * {
     padding: 0;
     margin: 0;
@@ -11,20 +12,23 @@
     --title-font: 700 44px/54px var(--main-font);
     --sub-title-font: 400 18px/28px var(--main-font);
 
-    --text-font: 400 16px/28px var(--main-font);
+    --title2-font: 700 36px/normal var(--main-font);
+
+    --title3-font: 600 22px/normal var(--main-font);
+    --sub-title3-font: 500 16px/26px var(--main-font);
+
+    --title4-font: 700 20px/30px var(--main-font);
+
     --sub-text-font: 400 11px/24px var(--main-font);
 
-    --button-text-font: 600 16px/normal varvar(--main-font);
+    --button-text-font: 600 16px/normal var(--main-font);
 
     /* Color variable */
     --dark-color: #2F281E;
     --white-color: #fff;
     --orange-color: #F90;
-
-    --field-color: #88839E;
-    --field-sub-color: #7A7593;
-    --field-hover-color: #625E77;
-    --field-active-color: var(--red-color);
+    --dark-brown-yellow-color: #544837;
+    --light-blue-color: #BCD0E5;
 }
 
 body {
@@ -53,6 +57,12 @@ body {
     text-align: left;
 }
 
+.link {
+    font: var(--sub-title3-font);
+    color: var(--dark-brown-yellow-color);
+    text-decoration: none;
+}
+
 /* Global style END */
 
 /* Header start */
@@ -75,6 +85,15 @@ body {
     gap: 20px;
 }
 
+.link-active {
+    color: var(--orange-color);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
 .header__buttons {
     display: flex;
     max-width: 252px;
@@ -92,6 +111,7 @@ body {
     height: 46px;
     padding: 13px 25px;
     border-radius: 4px;
+    border: 1px solid #BCD0E5;
 }
 
 .button2 {
@@ -104,6 +124,7 @@ body {
     width: 110px;
     height: 46px;
     border-radius: 4px;
+    border: 1px 1px solid var(--orange-color);
 }
 
 /* Header END */
@@ -163,6 +184,82 @@ body {
     width: 180px;
     height: 50px;
     border-radius: 4px;
+    border: 1px 1px solid var(--orange-color);
 }
 
 /* Section hero END */
+
+/* Section features start */
+.features {
+    background-color: var(--white-color);
+    background-image: url(/lesson11/homework/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    text-align: center;
+    color: var(--dark-color);
+    margin-top: 100px;
+}
+
+.features__screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features__heading {
+    font: var(--title2-font);
+    display: flex;
+    max-width: 539px;
+    padding-bottom: 50px;
+}
+
+.features__card {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+    gap: 30px;
+    padding-bottom: 70px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.card__heading {
+    font: var(--title3-font);
+}
+
+.text__subtext {
+    font: var(--sub-title3-font);
+    display: flex;
+    text-align: left;
+}
+
+.features__button {
+    background-color: var(--orange-color);
+    font: var(--button-text-font);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px 1px solid var(--orange-color);
+    margin-bottom: 78px;
+}
+
+/* Section features END */

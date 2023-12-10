@@ -56,6 +56,12 @@ body {
     text-align: left;
 }
 
+.link {
+    font: var(--sub-title3-font);
+    color: var(--dark-brown-yellow-color);
+    text-decoration: none;
+}
+
 /* Global style END */
 
 /* Header start */
