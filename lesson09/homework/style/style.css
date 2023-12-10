@@ -142,11 +142,15 @@ body {
 .left-side__title {
     color: var(--dark-color);
     font: var(--title-font);
+    display: flex;
+    text-align: left;
 }
 
 .left-side__text {
     color: var(--dark-color);
     font: var(--sub-title-font);
+    display: flex;
+    text-align: left;
 }
 
 .left-side__button {
