@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar {
+    background-color: aqua;
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.place {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    padding: 10px;
+    border: 1px solid;
+    width: 200px;
+}
+
+.item__text {
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    color: white;
+}
