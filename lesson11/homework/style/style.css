@@ -36,6 +36,10 @@ body {
     color: var(--dark-color);
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .wrapper {
     overflow: hidden;
 }
@@ -195,6 +199,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
+    background-position: bottom center;
     text-align: center;
     color: var(--dark-color);
     margin-top: 100px;
