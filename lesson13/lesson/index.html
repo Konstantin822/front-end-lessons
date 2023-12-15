@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box0,
+        .box1,
+        .box2 {
+            background-color: brown;
+        }
+
+        .box1 {
+            /* Позиция по умолчанию postion: static; */
+            position: static;
+
+            /* */
+            position: absolute;
+            border: 2px solid;
+            background-color: aqua;
+
+            top: 10px;
+            left: 10px;
+        }
+
+        .box0 {
+            border: 2px solid;
+            background-color: yellow;
+            position: absolute;
+            top: 10px;
+            left: 19px;
+            z-index: 1;
+        }
+
+        .row {
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .row::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Вопрос на собес. Какие знаешь свойства дисплея?
+    Какие знаешь position? Чем они отличаются? -->
+
+    <div class="row">
+        <div class="box0">111</div>
+        <div class="box1">222</div>
+        <div class="box2">333</div>
+        <div class="box2">444</div>
+        <div class="box2">555</div>
+        <div class="box2">666</div>
+    </div>
+</body>
+
+</html>
