@@ -131,6 +131,10 @@ body {
     gap: 70px;
 }
 
+.side-bar__link:hover {
+    cursor: pointer;
+}
+
 .side-bar__title {
     font: var(--title-font);
     letter-spacing: 1.44px;
