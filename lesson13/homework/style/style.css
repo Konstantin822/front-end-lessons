@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: black;
+}
+
 .wrapper {
     overflow: hidden;
 }
@@ -17,10 +21,12 @@
     display: flex;
     align-items: start;
     flex-direction: column;
-    max-width: 500px;
-    gap: 10px;
+    text-align: left;
+    max-width: 450px;
+    gap: 20px;
     position: absolute;
     top: 30%;
+    left: 80px;
 }
 
 .earth {
@@ -67,4 +73,28 @@
     top: 6%;
     left: 36%;
     z-index: 3;
+}
+
+.heading__title {
+    color: white;
+    font-size: 50px;
+}
+
+.heading__text {
+    color: white;
+    font-size: 20px;
+}
+
+.button {
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 46px;
+    padding: 13px 25px;
+    border-radius: 20px;
+    border: 2px solid blueviolet;
 }
