@@ -1,0 +1,205 @@
+/* Global style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --button-font: 'Tourney', sans-serif;
+    --nav-link-font: 'Staatliches', sans-serif;
+    --h2--font: 'Francois One', sans-serif;
+    --chapter-font: 'Farro', sans-serif;
+    --text-font: 'PT Sans', sans-serif;
+    /*1:font-weight  2:font-size/line-height 3:font-family */
+    --language-button-font: 600 22px/18px var(--button-font);
+    --header-link-font: 400 22px/normal var(--nav-link-font);
+
+    --title-font: 400 36px/48px var(--h2--font);
+    --chapters-font: 300 30px/normal var(--chapter-font);
+    --description-text-font: 400 28px/48px var(--text-font);
+
+    /* Color variable */
+    --dark-color: #000;
+    --white-color: #fff;
+}
+
+body {
+    font: var(--text-font);
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.cog {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font: var(--title-font);
+    text-align: left;
+}
+
+.description__text {
+    font: var(--description-text-font);
+    text-align: left;
+}
+
+.link {
+    font: var(--header-link-font);
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+/* Global style END */
+
+/* Global main */
+.main__container {
+    display: grid;
+    grid-template-columns: 385px 1fr;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    z-index: 1;
+}
+
+/* Global main END */
+
+/* Global chapter */
+.chapter {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.underline-text {
+    text-decoration-line: underline;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/* Global chapter END */
+
+/* Global heading */
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    gap: 10px;
+}
+
+.heading__title {
+    font: var(--title-font);
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.heading__chapter {
+    font: var(--chapters-font);
+    letter-spacing: 1.2px;
+}
+
+/* Global heading END */
+
+/* Aside */
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: flex-start;
+    width: 385px;
+    gap: 70px;
+}
+
+.side-bar__title {
+    font: var(--title-font);
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 15px;
+    text-decoration-color: lightgray;
+}
+
+/* Aside END */
+
+/* Header */
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.language__button {
+    font: var(--language-button-font);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px 1px solid var(--white-color);
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.link-text {
+    font: var(--header-link-font);
+}
+
+/* Header END */
+
+/* Section Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Section Hero END */
+
+/* Section chapter 3 */
+.grey-text {
+    background-color: rgb(202, 202, 202);
+}
+
+/* Section chapter 3 END */
+
+/* Section chapter 4 */
+.chapter-4 {
+    margin-bottom: 90px;
+}
+
+/* Section chapter 4 END */
