@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            height: 100px;
+            width: 200px;
+            background-color: black;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 5s;
+        }
+
+        .card:hover {
+            transform: rotateX(-360deg);
+        }
+
+        .card__front {
+            display: block;
+        }
+
+        .card__back {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card">
+            <div class="card__front">Front</div>
+            <div class="card__back">Back</div>
+        </div>
+    </div>
+</body>
+
+</html>

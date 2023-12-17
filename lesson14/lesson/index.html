@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .light {
+            --bg-color: #fff;
+            --color-text: #000;
+            --switch-btn: blue;
+        }
+
+        .dark {
+            --bg-color: #000;
+            --color-text: #fff;
+            --switch-btn: green;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--color-text);
+        }
+
+        .switch {
+            padding: 2px;
+            width: 100px;
+            height: 50px;
+            border: 1px solid;
+            border-radius: 50px;
+            background-color: beige;
+            display: flex;
+        }
+
+        .switch__item {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: var(--switch-btn);
+        }
+
+        .is-active {
+            justify-content: flex-end;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body class="light">
+    <div id="" class="switch">
+        <div class="switch__item"></div>
+    </div>
+
+    <div class="row">
+        <div class="box"></div>
+    </div>
+
+    <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet error optio tempore nulla nihil
+            sapiente necessitatibus maiores laudantium delectus.</p>
+    </div>
+
+    <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet error optio tempore nulla nihil
+            sapiente necessitatibus maiores laudantium delectus.</p>
+    </div>
+
+    <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet error optio tempore nulla nihil
+            sapiente necessitatibus maiores laudantium delectus.</p>
+    </div>
+
+    <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet error optio tempore nulla nihil
+            sapiente necessitatibus maiores laudantium delectus.</p>
+    </div>
+
+    <script>
+        //Кликабельный элемент
+        const btnSwitch = document.querySelector('.switch')
+
+        //Элемент к которому добавляем класс
+        const theme = document.querySelector('.light')
+
+        //Событие клик
+        btnSwitch.addEventListener('click', () => {
+            theme.classList.toggle('dark')
+            btnSwitch.classList.toggle('is-active')
+        })
+    </script>
+</body>
+
+</html>
