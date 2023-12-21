@@ -151,11 +151,11 @@ body {
     display: none;
 }
 
-.logo-row:hover .logo-row__item:nth-of-type(1) {
+.logo-row__item1:hover {
     display: none;
 }
 
-.logo-row:hover .logo-row__item__change:nth-of-type(1) {
+.logo-row__item__change:hover {
     display: block;
 }
 
