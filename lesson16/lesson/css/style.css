@@ -1,0 +1,17 @@
+.hero {
+  display: flex;
+}
+.hero__title {
+  color: red;
+}
+.hero__text--red {
+  color: red;
+}
+.hero__text:hover {
+  color: black;
+}
+.hero__text::after {
+  content: "test";
+}
+
+/*# sourceMappingURL=style.css.map */

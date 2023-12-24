@@ -1,0 +1,17 @@
+html {
+    font-size: 1px;
+}
+
+body {
+    font: var(--text-font);
+    color: var(--color-black);
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1120rem;
+    margin: 0 auto;
+}

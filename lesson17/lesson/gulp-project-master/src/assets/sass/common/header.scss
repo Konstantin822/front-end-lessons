@@ -1,0 +1,46 @@
+.header {
+    padding-top: 90rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 16rem;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font: var(--Heading-H8);
+        color: inherit;
+        letter-spacing: 3.9rem;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1rem;
+            width: 0;
+            margin: 0 auto;
+            background-color: transparent;
+            transition: all 0.8s;
+        }
+
+        &:hover {
+            &::after {
+                width: 70%;
+                background-color: var(--color-black);
+            }
+        }
+    }
+
+    &__nav-link--active {
+        &::after {
+            width: 70%;
+            background-color: var(--color-black);
+        }
+    }
+}

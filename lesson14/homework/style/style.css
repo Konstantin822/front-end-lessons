@@ -122,6 +122,11 @@ body {
 /* Global heading END */
 
 /* Aside */
+.aside {
+    position: sticky;
+    top: 0px;
+}
+
 .side-bar {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,22 @@
+.hero {
+    display: flex;
+
+    &__title {
+        color: $color-red;
+    }
+
+    &__text {
+
+        &--red {
+            color: red;
+        }
+
+        &:hover {
+            color: black;
+        }
+
+        &::after {
+            content: "test";
+        }
+    }
+}

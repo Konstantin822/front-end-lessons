@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Шлях до css це відносний шлях не залежить ввід папки-->
+    <link rel="stylesheet" href="@@webRoot/bundle.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" class="logo">
+                    <img src="@@webRoot/img/Logo.svg" alt="logo">
+                </a>
+                <nav class="header__nav">
+                    <a class="header__nav-link" href="/">Home</a>
+                    <a class="header__nav-link" href="@@webRoot/pages/about.html">About us</a>
+                    <a class="header__nav-link header__nav-link--active" href="@@webRoot/pages/works.html">Works</a>
+                    <a class="header__nav-link" href="@@webRoot/pages/blog.html">Blog</a>
+                    <a class="header__nav-link" href="@@webRoot/pages/contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="works">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="Heading-H1 hero__title">
+                        Works
+                    </h1>
+                    <img class="carusel__img" src="@@webRoot/img/hero-bg.jpg" alt="">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <h1>footer</h1>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--Обовязково додавати потрібно для JS -->
+    <script> var exports = {}; </script>
+    <script src="@@webRoot/js/index.js"></script>
+</body>
+
+</html>
