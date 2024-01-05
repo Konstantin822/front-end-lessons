@@ -1,0 +1,147 @@
+.home {
+
+    // Section hero
+    .hero {
+        padding: 127rem 0;
+
+        &__title {
+            max-width: 710rem;
+        }
+    }
+
+    // Section hero END 
+
+    // Section slider
+    .carusel {
+        display: flex;
+        gap: 32rem;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &__item {
+            width: 544rem;
+            flex-shrink: 0;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    // Section slider END 
+
+    // Section info
+    .info {
+        padding: 128rem 0;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            gap: 210rem;
+        }
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            gap: 38rem;
+        }
+
+        &__title-text {
+            letter-spacing: 2.3rem;
+        }
+
+        &__arrow {
+            max-width: 23rem;
+        }
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 40rem;
+            letter-spacing: 0.95rem;
+            color: var(--Grey-700)
+        }
+    }
+
+    // Section info END
+
+    // Section latest-posts
+    .latest-posts {
+        padding-bottom: 143rem;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 40rem;
+        }
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title-text {
+            letter-spacing: 1.6rem;
+        }
+
+        &__see-all {
+            display: flex;
+            justify-content: space-between;
+            gap: 8rem;
+
+            &__title-text {
+                color: var(--Grey-700);
+                letter-spacing: 1.6rem;
+            }
+        }
+
+        &__posts {
+            display: flex;
+            justify-content: space-between;
+            gap: 34rem;
+        }
+
+        &__posts-post {
+            display: flex;
+            flex-direction: column;
+            gap: 24rem;
+
+            &__tag-data {
+                display: flex;
+                justify-content: space-between;
+
+                &__tag {
+                    color: var(--Grey-700);
+                    letter-spacing: 1.2rem;
+                }
+
+                &__data {
+                    color: var(--Grey-700);
+                    letter-spacing: 1.2rem;
+                }
+            }
+
+            &__description-text {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 65rem;
+
+                &__title {
+                    letter-spacing: 2.3rem;
+                }
+
+                &__text {
+                    color: var(--Grey-700);
+                    letter-spacing: 0.8rem;
+                }
+            }
+        }
+    }
+
+    // Section latest-posts END
+}
