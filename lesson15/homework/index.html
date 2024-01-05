@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style-account.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="form" autocomplete="off">
+            <div class="form__heading">
+                <h2 class="form__heading__title">Create an Account</h2>
+            </div>
+            <div class="form__input">
+                <div class="form__input-name">
+                    <label for="name" class="label">First name</label>
+                    <input type="text" name="name" id="name" class="input-field" placeholder="">
+                </div>
+                <div class="form__input-name">
+                    <label for="name" class="label">Last name</label>
+                    <input type="text" name="name" id="name" class="input-field" placeholder="">
+                </div>
+                <div class="form__input-email">
+                    <label for="email" class="label">E-mail</label>
+                    <input type="email" name="email" id="email" class="input-field" placeholder="">
+                    <p class="form__input-email__text">We'll never share your email with anyone else.</p>
+                </div>
+            </div>
+
+            <div class="form__field">
+                <div class="form__field__radio">
+                    Стать
+                    <label for="radio" class="label">
+                        <input type="radio" name="radiobutton" class="input-radiobutton"> Male
+                        <input type="radio" name="radiobutton" class="input-radiobutton"> Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="form__address">
+                <div class="form__address__select">
+                    <label for="select" class="label">Country</label>
+                    <select name="country" class="select" id="select">
+                        <option value="choose">Select</option>
+                        <option value="front-end">Australia</option>
+                        <option value="python">Germany</option>
+                        <option value="Java">Ukraine</option>
+                        <option value="C++">England</option>
+                        <option value="C#">USA</option>
+                    </select>
+                </div>
+
+                <div class="form__address__city">
+                    <label for="city" class="label">City</label>
+                    <input type="text" name="city" id="city" class="input-field">
+                </div>
+            </div>
+
+            <div class="form__button">
+                <button class="button form__button__sign-up">Sign up</button>
+            </div>
+
+            <div class="form__terms">
+                <p class="form__terms__text">By clicking the 'Sign Up' button, you confirm that you accept our <a
+                        class="link form__terms__text" href="">Terms of
+                        Use</a> and <a class="link form__terms__text" href="">Privacy Policy</a></p>
+            </div>
+
+            <div class="form__line"></div>
+
+            <div class="form__log-in">
+                <p class="form__log-in__text">Have an account?</p>
+                <a class="link form__log-in__link">Log In</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+/* Global style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --button-font: 'Tourney', sans-serif;
+    --nav-link-font: 'Staatliches', sans-serif;
+    --h2--font: 'Francois One', sans-serif;
+    --chapter-font: 'Farro', sans-serif;
+    --text-font: 'PT Sans', sans-serif;
+    /*1:font-weight  2:font-size/line-height 3:font-family */
+    --language-button-font: 600 22px/18px var(--button-font);
+    --header-link-font: 400 22px/normal var(--nav-link-font);
+
+    --title-font: 400 36px/48px var(--h2--font);
+    --chapters-font: 300 30px/normal var(--chapter-font);
+    --description-text-font: 400 28px/48px var(--text-font);
+
+    /* Color variable */
+    --dark-color: #000;
+    --white-color: #fff;
+    --light-grey-color: #BFBFBF;
+}
+
+body {
+    font: var(--text-font);
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.cog {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font: var(--title-font);
+    text-align: left;
+}
+
+.description__text {
+    font: var(--description-text-font);
+    text-align: left;
+}
+
+.link {
+    font: var(--header-link-font);
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+/* Global style END */
+
+/* Header */
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.language__button {
+    font: var(--language-button-font);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px 1px solid var(--white-color);
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.link-text {
+    font: var(--header-link-font);
+}
+
+/* Header END */
+
+/* Section Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.heading {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.heading__divider {
+    width: 100px;
+    height: 8px;
+    background: var(--dark-color);
+}
+
+.heading__title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+}
+
+/* Section Hero END */
+
+/* Section logo's-tiles */
+.logo-tiles {
+    margin-top: 40px;
+}
+
+.logo-row {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    border-top: 1px solid var(--light-grey-color);
+    border-bottom: 1px solid var(--light-grey-color);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.logo-row .logo-row__item__change {
+    display: none;
+}
+
+.logo-row__item1:hover {
+    display: none;
+}
+
+.logo-row__item__change:hover {
+    display: block;
+}
+
+/* Пробовал сделать замену 1 картинки */
+
+/* .logo-row:hover .logo-row__item:nth-child(1) {
+    display: none;
+}
+
+.logo-row:hover .logo-row__item__change:nth-child(1) {
+    display: block;
+} */
+
+.logo-row:hover {
+    cursor: pointer;
+}
+
+/* Section logo's-tiles END */
