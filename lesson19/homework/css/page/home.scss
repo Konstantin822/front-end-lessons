@@ -1,0 +1,34 @@
+.hero {
+    padding-bottom: 265rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 145rem;
+    }
+
+    &__first-screen {
+        display: flex;
+        flex-direction: column;
+        gap: 60rem;
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 887rem;
+            gap: 30rem;
+
+            &__heading {
+                font: var(--Heading-H2);
+                color: var(--white-color);
+                text-transform: uppercase;
+            }
+
+            &__text {
+                font: var(--text-font);
+                color: var(--white-color);
+            }
+        }
+    }
+}

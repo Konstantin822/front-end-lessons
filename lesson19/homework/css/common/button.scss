@@ -1,0 +1,18 @@
+.hero__first-screen__description__buttons {
+    display: flex;
+    gap: 25rem;
+
+    &__button {
+        display: flex;
+        width: 342rem;
+        padding: 19rem 39rem;
+        justify-content: center;
+        align-items: center;
+        font: var(--button-font);
+        background: var(--black-color);
+        color: var(--light-green-color);
+        border: 1rem solid var(--light-green-color);
+        border-radius: 4rem;
+
+    }
+}
