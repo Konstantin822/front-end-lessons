@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@600&family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
+
+:root {
+    // Font Family
+    --main-font: 'Montserrat', sans-serif;
+    --sub-font: 'Inter', sans-serif;
+    --contact-font: 'Roboto Flex', sans-serif;
+
+    // Text fonts
+    --contact-text-font: 600 14rem/15rem var(--contact-font);
+    --nav-font: 400 12rem/18rem var(--sub-font);
+
+    --Heading-H2: 600 54rem/59rem var(--main-font);
+    --Heading-H2-sub: 600 48rem/52rem var(--main-font);
+    --text-font: 300 32rem/35rem var(--sub-font);
+    --thin-text-font: 300 48rem/52rem var(--main-font);
+    --button-font: 400 20rem/20rem var(--sub-font);
+    --button-font2: 400 16rem/16rem var(--contact-font);
+    --text2-font: 200 22rem/24rem var(--contact-font);
+    --Heading-H4: 600 18rem/20rem var(--contact-font);
+    --text3-font: 200 18rem/20rem var(--contact-font);
+}

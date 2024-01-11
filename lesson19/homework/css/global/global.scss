@@ -1,0 +1,25 @@
+html {
+    font-size: 1px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: var(--text-font);
+    background-color: var(--black-color);
+    color: var(--black-color);
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1680rem;
+    margin: 0 auto;
+}

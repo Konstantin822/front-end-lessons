@@ -1,0 +1,46 @@
+.hero__first-screen__description__buttons {
+    display: flex;
+    gap: 25rem;
+
+    &__button {
+        display: flex;
+        width: 342rem;
+        padding: 19rem 39rem;
+        justify-content: center;
+        align-items: center;
+        font: var(--button-font);
+        background: var(--black-color);
+        color: var(--light-green-color);
+        border: 1rem solid var(--light-green-color);
+        border-radius: 4rem;
+    }
+
+    &__button:first-child {
+        background: var(--light-green-color);
+        color: var(--black-color);
+    }
+}
+
+.drone__window__heading__description__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    &__button {
+        display: flex;
+        width: 250rem;
+        padding: 19rem 19rem;
+        justify-content: center;
+        align-items: center;
+        font: var(--button-font2);
+        background: var(--black-color);
+        color: var(--light-green-color);
+        border: 1rem solid var(--light-green-color);
+        border-radius: 4rem;
+    }
+
+    &__button:first-child {
+        background: var(--light-green-color);
+        color: var(--black-color);
+    }
+}
