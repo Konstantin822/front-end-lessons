@@ -1,7 +1,6 @@
 .header {
     padding-top: 20rem;
 
-<<<<<<< HEAD
     &__menu {
         display: flex;
         flex-direction: column;
@@ -74,74 +73,6 @@
             background-color: var(--light-green-color);
             width: 1920rem;
             margin-bottom: 46rem;
-=======
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &__contacts {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 23rem;
-
-        &__info {
-            display: flex;
-            gap: 28rem;
-        }
-
-        &__info-text {
-            font: var(--contact-text-font);
-            color: var(--white-color);
-        }
-
-        &__info__numbers {
-            display: flex;
-            gap: 28rem;
-        }
-
-        &__info__numbers-number {
-            font: var(--contact-text-font);
-            color: var(--light-green-color);
-        }
-    }
-
-    &__contacts-links {
-        display: flex;
-        gap: 10rem;
-
-        &__link {
-            text-decoration: none;
-        }
-    }
-
-    &__line {
-        width: 100%;
-        height: 2rem;
-        background: var(--orange-color);
-        margin-bottom: 46rem;
-    }
-
-    &__layout {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &__nav {
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            gap: 32rem;
-        }
-
-        &__nav-link {
-            font: var(--nav-font);
-            color: var(--white-color);
-            text-decoration: none;
-            letter-spacing: 0.24rem;
->>>>>>> 7ce43155e58c4454e595b4a44e234ee9fa28af62
         }
     }
 }

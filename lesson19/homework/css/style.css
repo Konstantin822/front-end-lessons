@@ -1,18 +1,320 @@
-/* Error: expected "{".
- *   ,
- * 5 |     --black2-color: #191919;
- *   |                            ^
- *   '
- *   variables\color.scss 5:28  @import
- *   style.scss 2:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 5 \2502      --black2-color: #191919;\d\a   \2502                             ^\a   \2575 \a   variables\\color.scss 5:28  @import\a   style.scss 2:9             root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@600&family=Roboto+Flex:opsz,wght@8..144,600&display=swap");
+:root {
+  --orange-color: #E4BD34;
+  --black-color: #020202;
+  --black2-color: #191919;
+  --dark-grey-color: #1E1E1E;
+  --white-color: #FFFFFF;
+  --light-green-color: #8DCD43;
+  --ashen-white-color: #E3E3E3;
 }
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --sub-font: "Inter", sans-serif;
+  --contact-font: "Roboto Flex", sans-serif;
+  --contact-text-font: 600 14rem/15rem var(--contact-font);
+  --nav-font: 400 12rem/18rem var(--sub-font);
+  --Heading-H2: 600 54rem/59rem var(--main-font);
+  --Heading-H2-sub: 600 48rem/52rem var(--main-font);
+  --text-font: 300 32rem/35rem var(--sub-font);
+  --thin-text-font: 300 48rem/52rem var(--main-font);
+  --button-font: 400 20rem/20rem var(--sub-font);
+  --button-font2: 400 16rem/16rem var(--contact-font);
+  --text2-font: 200 22rem/24rem var(--contact-font);
+  --Heading-H4: 600 18rem/20rem var(--contact-font);
+  --text3-font: 200 18rem/20rem var(--contact-font);
+}
+
+html {
+  font-size: 1px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: var(--text-font);
+  background-color: var(--black-color);
+  color: var(--black-color);
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1680rem;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 20rem;
+}
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__menu__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1680rem;
+  margin-bottom: 22rem;
+}
+.header__menu__contacts__info {
+  display: flex;
+  gap: 28rem;
+}
+.header__menu__contacts__info-text {
+  font: var(--contact-text-font);
+  color: var(--white-color);
+}
+.header__menu__contacts__info__numbers {
+  display: flex;
+  gap: 28rem;
+}
+.header__menu__contacts__info__numbers-number {
+  font: var(--contact-text-font);
+  color: var(--light-green-color);
+}
+.header__menu__contacts__links {
+  display: flex;
+  gap: 10rem;
+}
+.header__menu__contacts__links__link {
+  text-decoration: none;
+}
+.header__menu__layout {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 1680rem;
+}
+.header__menu__layout-nav {
+  display: flex;
+}
+.header__menu__layout-nav__nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 32rem;
+}
+.header__menu__layout-nav__nav__link {
+  font: var(--nav-font);
+  color: var(--white-color);
+  text-decoration: none;
+  letter-spacing: 0.24rem;
+}
+.header__menu__line {
+  height: 1rem;
+  background-color: var(--light-green-color);
+  width: 1920rem;
+  margin-bottom: 46rem;
+}
+
+.hero__first-screen__description__buttons {
+  display: flex;
+  gap: 25rem;
+}
+.hero__first-screen__description__buttons__button {
+  display: flex;
+  width: 342rem;
+  padding: 19rem 39rem;
+  justify-content: center;
+  align-items: center;
+  font: var(--button-font);
+  background: var(--black-color);
+  color: var(--light-green-color);
+  border: 1rem solid var(--light-green-color);
+  border-radius: 4rem;
+}
+.hero__first-screen__description__buttons__button:first-child {
+  background: var(--light-green-color);
+  color: var(--black-color);
+}
+
+.drone__window__heading__description__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.drone__window__heading__description__buttons__button {
+  display: flex;
+  width: 250rem;
+  padding: 19rem 19rem;
+  justify-content: center;
+  align-items: center;
+  font: var(--button-font2);
+  background: var(--black-color);
+  color: var(--light-green-color);
+  border: 1rem solid var(--light-green-color);
+  border-radius: 4rem;
+}
+.drone__window__heading__description__buttons__button:first-child {
+  background: var(--light-green-color);
+  color: var(--black-color);
+}
+
+.hero {
+  padding-bottom: 265rem;
+}
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 145rem;
+}
+.hero__first-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 60rem;
+}
+.hero__first-screen__description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 887rem;
+  gap: 30rem;
+}
+.hero__first-screen__description__heading {
+  font: var(--Heading-H2);
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+.hero__first-screen__description__text {
+  font: var(--text-font);
+  color: var(--white-color);
+}
+
+.description {
+  margin: 160rem 0;
+}
+.description__container {
+  padding-top: 145rem;
+}
+.description__header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.description__header__txt {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 536rem;
+  gap: 20rem;
+}
+.description__header__txt__heading {
+  font: var(--Heading-H2);
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: 0.96rem;
+}
+.description__header__txt__heading__thin {
+  font: var(--thin-text-font);
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: 0.96rem;
+}
+.description__header__txt__text {
+  font: var(--text2-font);
+  color: var(--white-color);
+  letter-spacing: 0.44rem;
+}
+.description__benefits {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20rem;
+  padding-top: 60rem;
+}
+.description__benefits__benefit {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20rem;
+  width: 549rem;
+  padding: 50rem 40rem;
+  background: var(--dark-grey-color);
+  border-radius: 8rem;
+}
+.description__benefits__benefit__descr {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: var(--white-color);
+  gap: 10rem;
+}
+.description__benefits__benefit__descr__text {
+  font: var(--text2-font);
+}
+
+.drone {
+  margin-bottom: 200rem;
+}
+.drone__window {
+  padding: 60rem 153rem;
+}
+.drone__window__heading {
+  position: relative;
+}
+.drone__window__heading__description {
+  display: flex;
+  flex-direction: column;
+  width: 527rem;
+  gap: 40rem;
+}
+.drone__window__heading__description__info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20rem;
+}
+.drone__window__heading__description__info__header {
+  font: var(--Heading-H2-sub);
+  color: var(--white-color);
+  letter-spacing: 0.96rem;
+  text-transform: uppercase;
+}
+.drone__window__heading__description__info__text {
+  font: var(--text2-font);
+  color: var(--white-color);
+  letter-spacing: 0.44rem;
+}
+.drone__window__heading__img {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+.drone__window__tech-data {
+  display: grid;
+  grid-template-columns: 325rem repeat(2, 240rem) 253rem 240rem;
+  grid-template-rows: repeat(2, 106rem);
+  gap: 20rem;
+  margin-top: 75rem;
+}
+.drone__window__tech-data__info {
+  background: var(--black2-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20rem;
+  gap: 6rem;
+  border-radius: 6rem;
+}
+.drone__window__tech-data__info__heading {
+  font: var(--Heading-H4);
+  color: var(--orange-color);
+}
+.drone__window__tech-data__info__text {
+  font: var(--text3-font);
+  color: var(--ashen-white-color);
+  letter-spacing: 0.36rem;
+}
+
+/*# sourceMappingURL=style.css.map */
