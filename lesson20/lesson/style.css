@@ -1,0 +1,11 @@
+#in2 {
+    display: none;
+}
+
+ul {
+    display: none;
+}
+
+#in2:checked~ul {
+    display: block;
+}

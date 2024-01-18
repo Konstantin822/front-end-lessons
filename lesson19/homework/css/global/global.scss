@@ -10,13 +10,11 @@ html {
 
 body {
     font: var(--text-font);
-    background-color: var(--black-color);
+    background: var(--black2-color);
     color: var(--black-color);
 }
 
-.wrapper {
-    overflow: hidden;
-}
+
 
 .container {
     width: 100%;

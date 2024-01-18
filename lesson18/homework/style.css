@@ -18,13 +18,26 @@ button {
     padding: 20px;
     border: none;
     border-radius: 20px;
-    width: 100px;
+    width: 200px;
     background: linear-gradient(90deg, red, transparent) orange;
     color: white;
     transition: all 1s;
 }
 
 .button:hover {
-    background-color: green;
-    color: white;
+    animation: animName 3s infinite;
+}
+
+@keyframes animName {
+    0% {
+        background-position: -290px;
+    }
+
+    50% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -290px;
+    }
 }

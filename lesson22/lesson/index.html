@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border-radius: 50%;
+
+            animation: animName1 1s 100ms infinite;
+        }
+
+        /* .box:hover {
+            animation-play-state: paused;
+        } */
+
+        .box:nth-child(2) {
+            animation: animName1 1s 300ms infinite;
+        }
+
+        .box:nth-child(3) {
+            animation: animName1 1s 400ms infinite;
+        }
+
+        @keyframes animName {
+            from {
+                transform: translateY(-100px);
+            }
+
+            to {
+                transform: translateY(100px);
+            }
+        }
+
+        @keyframes animName1 {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(400px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

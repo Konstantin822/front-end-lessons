@@ -1,9 +1,11 @@
 .hero {
     padding-bottom: 265rem;
+    background: var(--black-color);
 
     &__container {
         display: flex;
         justify-content: space-between;
+        align-content: center;
         padding-top: 145rem;
     }
 
@@ -28,6 +30,153 @@
             &__text {
                 font: var(--text-font);
                 color: var(--white-color);
+            }
+        }
+    }
+}
+
+.description {
+    margin: 160rem 0;
+
+    &__container {
+        padding-top: 145rem;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+
+        &__txt {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 536rem;
+            gap: 20rem;
+
+            &__heading {
+                font: var(--Heading-H2);
+                color: var(--white-color);
+                text-transform: uppercase;
+                letter-spacing: 0.96rem;
+
+                &__thin {
+                    font: var(--thin-text-font);
+                    color: var(--white-color);
+                    text-transform: uppercase;
+                    letter-spacing: 0.96rem;
+                }
+            }
+
+            &__text {
+                font: var(--text2-font);
+                color: var(--white-color);
+                letter-spacing: 0.44rem;
+            }
+        }
+    }
+
+    &__benefits {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 20rem;
+        padding-top: 60rem;
+
+        &__benefit {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 20rem;
+            width: 549rem;
+            padding: 50rem 40rem;
+            background: var(--dark-grey-color);
+            border-radius: 8rem;
+
+            &__descr {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                color: var(--white-color);
+                gap: 10rem;
+
+                &__text {
+                    font: var(--text2-font);
+                }
+            }
+        }
+    }
+}
+
+.drone {
+    margin-bottom: 200rem;
+
+    &__window {
+        padding: 60rem 153rem;
+        background: var(--dark-grey-color);
+
+        &__heading {
+            display: flex;
+
+            &__description {
+                display: flex;
+                flex-direction: column;
+                width: 527rem;
+                gap: 40rem;
+
+                &__info {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    gap: 20rem;
+
+                    &__header {
+                        font: var(--Heading-H2-sub);
+                        color: var(--white-color);
+                        letter-spacing: 0.96rem;
+                        text-transform: uppercase;
+                    }
+
+                    &__text {
+                        font: var(--text2-font);
+                        color: var(--white-color);
+                        letter-spacing: 0.44rem;
+                    }
+                }
+            }
+
+            &__img {
+
+                right: 10%;
+                top: 10%;
+            }
+        }
+
+        &__tech-data {
+            display: grid;
+            grid-template-columns: 325rem repeat(2, 240rem) 253rem 240rem;
+            grid-template-rows: repeat(2, 106rem);
+            gap: 20rem;
+            margin-top: 75rem;
+
+            &__info {
+                background: var(--black2-color);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20rem;
+                gap: 6rem;
+                border-radius: 6rem;
+
+                &__heading {
+                    font: var(--Heading-H4);
+                    color: var(--orange-color);
+                }
+
+                &__text {
+                    font: var(--text3-font);
+                    color: var(--ashen-white-color);
+                    letter-spacing: 0.36rem;
+                }
             }
         }
     }
