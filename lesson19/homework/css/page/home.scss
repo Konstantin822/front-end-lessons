@@ -112,10 +112,16 @@
 
     &__window {
         padding: 60rem 153rem;
+<<<<<<< HEAD
         background: var(--dark-grey-color);
 
         &__heading {
             display: flex;
+=======
+
+        &__heading {
+            position: relative;
+>>>>>>> 1525714074d2d5f3a08e088842aed4f3d5756069
 
             &__description {
                 display: flex;
@@ -145,7 +151,11 @@
             }
 
             &__img {
+<<<<<<< HEAD
 
+=======
+                position: absolute;
+>>>>>>> 1525714074d2d5f3a08e088842aed4f3d5756069
                 right: 10%;
                 top: 10%;
             }
